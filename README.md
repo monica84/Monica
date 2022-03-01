@@ -35,8 +35,8 @@ The Main class has 2 parameters to configure the testing
    - int batchSize = 2;
   
 ## Room for Improvement
-- One:
-  - The Producer and Consumer are very basic objects since the focus of the assignment was the BufferedQueue implementation
-  - The sequencing of messages and batch numbers is done with incrementing integer values. The program will stop functioning when maximum value of integer is reached. This can be further improved by:
-    - adding a limit to number of messages that can be stored in the BufferedQueue
-    - adding constraints on what happens when the queue is full
+- The code does not have Expcetion Handling for any error cases. This was left out for easy code readability. In a subsystem, a complete Error escalation design is needed with decisions on how to handle the error conditions. Since this was not a collaborative assignment, decided to keep Exception Handling out of the problem scope.
+- The Producer and Consumer are very basic objects since the focus of the assignment was the BufferedQueue implementation
+- The sequencing of messages and batch numbers is done with incrementing integer values. The program will stop functioning when maximum value of integer is reached. This can be further improved by:
+  - adding a limit to number of messages that can be stored in the BufferedQueue
+  - adding constraints on what happens when the queue is full
