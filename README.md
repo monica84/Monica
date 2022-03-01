@@ -20,7 +20,12 @@ This project creates sequenced messages out of order, buffers them sends them ou
 - Command Line
     - Compile the project and then run:
     - java com.sailpoint.assignment.Main
-
+  
+- When this program is run, it outputs two things on System.out:
+  - Each Message as it is created by the producer (showing the message text and teh sequence number)
+  - A sequence of message numbers received at the consumer
+  - Both the above outputs are interleaved as they are received by System.out
+ 
 ## Configuration for testing
 The Main class has 2 parameters to configure the testing
  - maxMsgs - Total number of messages to be send out by the Producer to the BufferedQueue 
